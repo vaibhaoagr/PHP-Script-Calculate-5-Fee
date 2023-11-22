@@ -1,0 +1,28 @@
+<?php
+// Desired result after deducting 5% transaction fee
+$result = 7700;
+
+// Transaction fee percentage
+$feePercentage = 5;
+
+// Calculate the original amount before the fee
+$originalAmount = $result / (1 - $feePercentage / 100);
+
+// Round the original amount up to the nearest integer
+$roundedAmount = ceil($originalAmount);
+
+// Display the result
+echo "Desired Result after Transaction Fee: $result<br>";
+echo "Transaction Fee Percentage: $feePercentage% <br>";
+echo "Original Amount before Transaction Fee: $originalAmount <br>";
+echo "Rounded Amount: $roundedAmount\n";
+?>
+
+
+
+result:-
+
+Desired Result after Transaction Fee: 7700
+Transaction Fee Percentage: 5%
+Original Amount before Transaction Fee: 8105.2631578947
+Rounded Amount: 8106
